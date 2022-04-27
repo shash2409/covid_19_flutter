@@ -2,7 +2,7 @@ import 'networking.dart';
 
 class CovidModel {
   Future<dynamic> getIndiaData() async {
-    var url = 'https://api.covid19india.org/data.json';
+    var url = 'https://data.covid19india.org/data.json';
     NetworkHelper networkHelper = NetworkHelper(url);
     var indiaData = await networkHelper.getData();
     return indiaData;
@@ -30,14 +30,16 @@ class CovidModel {
   }
 
   Future<dynamic> getDistrictData() async {
-    var url = 'https://api.covid19india.org/v2/state_district_wise.json';
+    var url = 'https://data.covid19india.org/data.json';
+    //var url = 'https://api.covid19india.org/v2/state_district_wise.json';
     NetworkHelper networkHelper = NetworkHelper(url);
     var districtData = await networkHelper.getData();
     return districtData;
   }
 
   Future<dynamic> getZoneData() async {
-    var url = 'https://api.covid19india.org/zones.json';
+    var url = 'https://data.covid19india.org/data.json';
+    //var url = 'https://api.covid19india.org/v2/state_district_wise.json';
     NetworkHelper networkHelper = NetworkHelper(url);
     var zoneData = await networkHelper.getData();
     return zoneData['zones'];

@@ -11,10 +11,12 @@ class NetworkHelper {
 
     if (response.statusCode == 200) {
       String data = response.body;
-
+      var d = await json.decode(json.encode(response.body));
       return jsonDecode(data);
+      //return d;
     } else {
       print(response.statusCode);
+      print(response.body);
     }
   }
 }

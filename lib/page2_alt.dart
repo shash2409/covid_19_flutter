@@ -678,21 +678,22 @@ class _IndiaSpecificState extends State<IndiaSpecific> {
         right: 10.0,
       ),
       child: GestureDetector(
-        onTap: () => Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) {
-              return StatePage(
-                cData: widget.cData,
-                districtData: widget.districtData,
-                zoneData: widget.zoneData,
-                stateCode: stateCode,
-                state: state,
-                stateConfirmed: confirmed,
-              );
-            },
-          ),
-        ),
+        onTap: () => {},
+        // onTap: () => Navigator.push(
+        //   context,
+        //   MaterialPageRoute(
+        //     builder: (context) {
+        //       return StatePage(
+        //         cData: widget.cData,
+        //         districtData: widget.districtData,
+        //         zoneData: widget.zoneData,
+        //         stateCode: stateCode,
+        //         state: state,
+        //         stateConfirmed: confirmed,
+        //       );
+        //     },
+        //   ),
+        // ),
         child: Container(
           height: 120.0 / 896.0 * MediaQuery.of(context).size.height,
           width: 150.0 / 414.0 * MediaQuery.of(context).size.width,

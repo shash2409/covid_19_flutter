@@ -41,7 +41,7 @@ class _DashboardState extends State<Dashboard> {
 
   void setPercent() {
     if (selectedButton == 2) {
-      percent = widget.recoveredPercent;
+      //percent = widget.recoveredPercent;
     } else if (selectedButton == 1) {
       percent = widget.deadPercent;
     } else {
@@ -153,7 +153,7 @@ class _DashboardState extends State<Dashboard> {
     } else if (selectedButton == 1) {
       count = widget.deadCases;
     } else if (selectedButton == 2) {
-      count = widget.recoveredCases;
+      //count = widget.recoveredCases;
     }
     return Container(
       height: 68.0,
@@ -450,10 +450,10 @@ class _DashboardState extends State<Dashboard> {
                       borderRadius: BorderRadius.circular(5.0),
                     ),
                     onPressed: () {
-                      setState(() {
-                        selectedButton = 2;
-                        setPercent();
-                      });
+                      // setState(() {
+                      //   selectedButton = 2;
+                      //   setPercent();
+                      // });
                     },
                     child: Text('Recovered'),
                   )
