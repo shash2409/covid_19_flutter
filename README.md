@@ -3,5 +3,5 @@
 A COVID-19 tracker app.
 
 ### Home - Global
-![home](./assets/screenshots/covid19-home.jpeg | width=100)
+![home][[./assets/screenshots/covid19-home.jpeg | width=100]]
 
